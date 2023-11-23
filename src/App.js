@@ -1,22 +1,21 @@
 import './App.css';
 import { Route,Routes } from 'react-router-dom';
-import Navbar from './navbar';
-import Stocks from './components/stocks';
-import Favourites from './components/favourites';
-import Cart from './components/cart';
-
+import NavEducative from './NavEducative';
+import Home from './components/HomeEducative';
+import About from './components/AboutEducative';
 function App() {
   return (
    <>
-    <Navbar/>
+    <NavEducative/>
       <div>
     <Routes>        
-      <Route path="/"  element={<Stocks/>} />
-      <Route path="/favourites"  element={<Favourites />}/>
-      <Route path="/cart"  element={<Cart/>}/>
+      <Route path="/"  element={<Home/>} />
+      <Route path="/about"  element={<About/>}/>
     </Routes>
     </div>
-    </>
+   </>
+  
+    
    
   );
 }
